@@ -1,48 +1,110 @@
-body {
-  
-    background-color: rgb(59, 59, 59);
-    
-  }
-  /*.auto-grid{
-        --auto-grid-min-size: 16rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
-        gap: 3rem;
-        list-style-type: none;
-  }*/
-  .grid-container{
-      display: grid;
-      grid-template-columns: repeat(8
-      , 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      gap: 5px;
-      
-  }
-.navbar{
-    
-    background-color: black;
-    display: grid;
-    justify-content: left;
-    grid-column-start: 2;
-    grid-column-end: 6;
-    
-  }
+body, ul li a{
+  background-color: rgb(255, 246, 221);
  
-  .navbar--links{
-     
-    background-color:none;
-   display: inline;
-    padding: 0px 10px;
-  
-    list-style-type: none;
-  }
-  
-  a:visited{
-      color: red;
-  }
-  a:hover{
-    background-color: grey;
 }
-a:active{
-    color: blue;
+.navigator-bar{
+  display: flex;
+  list-style-type: none;
+  gap: 3rem;
+  font-size: larger;
+  justify-content: center;
+  
+  margin-top: 0px;
+  
+}
+
+
+ul li a{
+  text-decoration: none;
+  color: black;
+  padding: 5px;display: grid;
+
+ margin: 0px;
+ padding: 0px;
+ grid-column: 2 / 4 ;
+  
+}
+a:hover{
+  cursor: pointer;
+  color: green;
+ 
+}
+
+.grid-container{
+  display: grid;
+  gap: 3px;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-rows: repeat(auto, minmax(0, 1fr));
+  
+}
+
+img{
+  display: block;
+  border: 0;
+  width: 100%;
+  height: auto;
+  
+
+}
+.firstproject{
+  display: grid;
+  /*background-image: url(./Images/social-media-5187243_19201280.jpg);
+  background-size: contain;
+  background-position: center;*/
+ margin: 0px;
+ padding: 0px;
+ grid-column: 2 / 4 ;
+ 
+ 
+}
+.grid-container--item2{
+  display: grid;
+
+ grid-column: 2 / 6;
+  background-color: rgb(138, 138, 253);
+  
+  
+  
+}
+
+/*.presentation{
+  display: grid;
+ text-align: center;
+
+}*/
+
+.grid-container--item4{
+
+  display: block;
+  grid-column: 4 / 6;
+  background-color: rgb(220, 250, 203);
+  
+}
+p, h1{
+  
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+.javascript{
+  display: block;
+  grid-column: 2 /4;
+  background-color: lightgray;
+  text-align: center;
+}
+.javascript-project{
+  display: grid;
+  grid-column: 4 / 6;
+}
+.avjavascript-project{
+  display: grid;
+  grid-column: 2 / 4;
+  
+}
+
+.avjavascript{
+  background-color: lightyellow;
+  text-align: center;
+  grid-column: 4 / 6;
 }

@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Projekt/Ny mapp/portfolio.style.css" />
-    <title>Document</title>
-  </head>
+    <link rel="stylesheet" type="text/css" href="./Portfolio2styles.css" />
+    <title>Portfolio</title>
+</head>
 
-  <body>
-    <main>
-      <header>
-        <div class="auto-grid">
-          <div class="grid-container">
+<body>
+    <!--Navigator-->
+    <!--Här ska nav bar ligga-->
+    <nav class="navigator" role="navigation">
+        <ul class="navigator-bar">
+            <li><a href="./Presentation.html">Hem</a></li>
+            <li><a href="/Portfolio2.html">Portfolio</a></li>
+            <li><a href="/Kontaktat.mig.html">Kontakta mig</a></li>
+        </ul>
+    </nav>
+    <!--Här är huvudet för sidan. Välkommen text.-->
 
-            <div class="navbar">
-              <ul>
-                <li class="navbar--links">
-                  <a href="/Projekt/Test2/Presentation.html">Hem</a>
-                </li>
-                <li class="navbar--links">
-                  <a href="/Projekt/Test2/Portfolio.html">Portfolio</a>
-                </li>
-                <li class="navbar--links">
-                  <a href="/Projekt/Test2/Kontaktat.mig.html">Kontakta mig</a>
-                </li>
-              </ul>
+    <header>
+        <div class="grid-container">
+            <!--<figure class="grid-container--item1">
+                <img src="/Images/social-media-5187243_19201280.jpg"
+                    alt="sociala medier">
+            </figure>-->
+
+            <div class="grid-container--item2">
+                <h1 class="title">Min Portfolio</h1>
+                <p class="title-subtext">
+                    Detta en min portfolio sida för mina arbeten inom Front-End
+                    utveckling. Jag är fortfarande student så förvänta dig att sidan
+                    samt projekten kommer bli bättre genom tiden.
+                </p>
             </div>
-            
+                <div class="firstproject">
+                <figure class="firstproject">
+                    <a href="./Presentation.html"><img src="/Images/social-media-5187243_19201280.jpg"
+                        alt="sociala medier">
+                    </a>
+                </figure>
+            </div>
+            <div class="grid-container--item4">
+                <h1 class="presentation">Presentation</h1>
+                <div class="presentation__text">
+                    <p> Mitt första arbete var att göra en sida om mig själv där jag skriver lite om vem jag är och vilka intressen jag har. Jag använde endast HTML och CSS.
 
-          </div>
+                    </p>
+                </div>
+            </div>
+            <div class="javascript">
+                <h1 class="javascript--headline">Javascript</h1>
+                <div class="javascipt__text">
+                    <p> Det här är ett framtida project som kommer i nästa kurs, Javascript.
+                    </p>
+                </div>
+            </div>
+            <div class="javascript-project">
+                <figure class="firstproject">
+                    
+                    <a href="linkedin.com"><img src="/Images/social-media-5187243_19201280.jpg" 
+                        alt="sociala medier"> </a>
+                </figure>
+            </div>
+            <div class="avjavascript-project">
+                <figure class="firstproject">
+                    <img src="/Images/social-media-5187243_19201280.jpg"
+                        alt="sociala medier">
+                </figure>
+            </div>
+            <div class="avjavascript">
+                <h1 class="avjavascript--headline">Avancerat Javascript</h1>
+                <div class="avjavascipt__text">
+                    <p> Det här är ett framtida project som kommer i nästa kurs, Javascript.
+                    </p>
+            </div>
         </div>
-      </header>
-    </main>
-  </body>
+    </header>
+</body>
+
 </html>
