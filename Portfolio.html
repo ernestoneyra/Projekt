@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" type="text/css" href="./Portfolio.style.css" />
-    <title>Hello World</title>
-  </head>
 
-  <body class="d-flex flex-column">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Meny
-            </a>
-              <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
-              <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Projekt</a>
-                <a class="dropdown-item" href="#">Kontakta mig</a>
-                <!--<div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>-->
-              </div>
-            </li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Fonten för Open sans familjen från google API.-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet" />
+  <!--Stylesheet för Bootstrap från cdn.-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <!--Nedanstående Styleheets är mina egna. Den första har lite tweaks för färg och media queries samt hela kontaktformuläret.-->
+  <link rel="stylesheet" type="text/css" href="/Portfolio.style.css" />
+  <!--Den här är för dropdown menyn i navigatioonen. -->
+  <link rel="stylesheet" type="text/css" href="/uppgiftahover.css" />
+  <title>Ernesto Neyra Portfolio kopia</title>
+</head>
+<!--Main sidan börjar här. Det är layouten som är först följt av min lilla dropdown meny.-->
+
+<body class="d-flex flex-column">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <ul>
+        <li><a class="projekt">Projekt</a>
+          <ul class="dropdown">
+            <li><a class="dropdown-item" href="#project_1">Presentation</a></li>
+            <li><a class="dropdown-item" href="#project_2">Webbprojekt</a></li>
+            <li><a class="dropdown-item" href="#project_3">Javascript</a></li>
+            <li><a class="dropdown-item" href="#project_4">Applikation</a></li>
+            <li><a class="dropdown-item" href="#project_5">React</a></li>
           </ul>
-        </div>
-      </div>
-    </nav>
-    <sectiion>
-    <!-- Page Content -->
+        <li> <a class="projekt" href="#kontakta_mig">Kontakta mig</a> </li>
+      </ul>
+      
+    </div>
+  </nav>
+  <sectiion>
+    <!-- Innehållet (projekten och texten etc.) börjar här.  -->
     <div class="container">
 
-      <!-- Page Heading -->
-      <h1 class="my-4">My Portfolio<br>
-        <small>short welcome</small>
+      <!-- Rubriken -->
+      <h1 class="my-4">Hej och välkommen till min Portfolio<br>
+
+        <p class="introduktion my-4">Jag heter Ernesto Neyra och studerar till Front-End utvecklare. I denna portfolio
+          kan ni se vilka projekt jag har jobbat på och vad som kommer i framtiden. Jag har nyligen påbörjat min
+          utbildning så förvänta er inte någonting fantastikt vackert. Ni kan läsa mer om mig på min presentationssida
+          som ni kan nå via bilden under Projekt Ett.</p><br>
       </h1>
 
-      <!-- Project One -->
+      <!-- Projekt Ett -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="/Images/social-media-5187243_19201280.jpg" alt="design">
+          <a href="/Presentation.html">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/Images/sunset.jpg" alt="Sunset over sand dunes">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project One</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium veniam exercitationem expedita laborum at voluptate. Labore, voluptates totam at aut nemo deserunt rem magni pariatur quos perspiciatis atque eveniet unde.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <a id="project_1">
+            <h3>Project Ett</h3>
+          </a>
+          <h4>Presentation</h4><br>
+          <p>Det här mitt första projekt. Det är en väldigt simpel sida med information om mig själv och mina intressen.
+            Det enda som användes i den sidan är HTML och CSS. </p>
+          <img class="img-fluid rounded" src="/Images/html-5.png" alt="HTML 5" style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/icon css 3.png" alt="CSS 3" style="width: 10%; height: auto;" />
         </div>
       </div><br>
-      <!-- /.row -->
 
-    
-
-      <!-- Project Two -->
+      <!-- Projekt Två -->
       <div class="row">
         <div class="col-md-7">
-          <a href="#">
+          <a href="/webbprojekt.html">
             <img class="img-fluid rounded mb-3 mb-md-0" src="/Images/social-media-5187243_1920.png" alt="">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Two</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, odit velit cumque vero doloremque repellendus distinctio maiores rem expedita a nam vitae modi quidem similique ducimus! Velit, esse totam tempore.</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <a id="project_2">
+            <h3>Project Två</h3>
+          </a>
+          <h4>Webbprojekt</h4>
+          <p>För tillfället vet jag inte vad som kommer ingå i detta projekt. Det blir ett större projekt än de andra,
+            skulle jag tro. Jag kommer även använda mer än endast HTML och CSS som jag har använt mig av hittils. Det
+            blir roligt att se vad det blir.</p>
+          <img class="img-fluid rounded" src="/Images/html-5.png" alt="HTML 5" style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/icon css 3.png" alt="CSS 3" style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/1024px-Bootstrap_logo.svg.png" alt="Bootstrap"
+            style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/Javascript icon.png" alt="Javascript"
+            style="width: 12%; height: auto;" />
+          <img class="img-fluid  rounded" src="/Images/react-logo.png" alt="React logo icon"
+            style="width: 35%; height: auto;" />
         </div>
       </div><br>
-      <!-- /.row -->
 
-     
-
-      <!-- Project Three -->
+      <!-- Projekt Tre-->
       <div class="row">
         <div class="col-md-7">
           <a href="#">
@@ -94,112 +100,131 @@
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Three</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, temporibus, dolores, at, praesentium ut unde repudiandae voluptatum sit ab debitis suscipit fugiat natus velit excepturi amet commodi deleniti alias possimus!</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <a id="project_3">
+            <h3>Project Tre</h3>
+          </a>
+          <h4>Javascript</h4>
+          <p>Här kommer jag ladda upp JavaScript (JS) projekten. Det är många som säger att JS är väldigt roligt att
+            leka/koda med. Jag vet inte än hur det ser ut eller fungerar. Ser fram emot att lära mig det väldigt snart.
+          </p>
+          <img class="img-fluid rounded" src="/Images/html-5.png" alt="HTML 5" style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/icon css 3.png" alt="CSS 3" style="width: 10%; height: auto;" />
+          <img class="img-fluid rounded" src="/Images/Javascript icon.png" alt="Javascript"
+            style="width: 12%; height: auto;" />
+
         </div>
       </div><br>
-      <!-- /.row -->
 
-    
-
-      <!-- Project Four -->
+      <!-- Projekt Fyra -->
       <div class="row">
 
         <div class="col-md-7">
           <a href="#">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="http://placehold.it/700x300" alt="">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/Images/Kumamon.jpeg" alt="Kumamon mascot">
           </a>
         </div>
         <div class="col-md-5">
-          <h3>Project Four</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in suscipit?</p>
-          <a class="btn btn-primary" href="#">View Project</a>
+          <a id="project_4">
+            <h3>Projekt Fyra</h3>
+          </a>
+          <h4>Applikation</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur,
+            suscipit?</p>
+
+
         </div>
       </div><br>
-      <!-- /.row -->
-<hr>
-<section>
-    <div class="random">
 
-      <div class="grid-container">
-          <div class="grid-item1">
-              <h1>Kontakta mig.</h1>
-          </div>
-          
-          <div class="grid-item2">
+      <!-- Projekt Fem -->
+      <div class="row">
+
+        <div class="col-md-7">
+          <a href="#">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="/Images/shinjo-kun-and-chiitan.jpg"
+              alt="Shinjokun and chiitan">
+          </a>
+        </div>
+        <div class="col-md-5">
+          <a id="project_5">
+            <h3>Projekt Fem</h3>
+          </a>
+          <h4>React</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, quidem, consectetur, officia rem
+            officiis illum aliquam perspiciatis aspernatur quod modi hic nemo qui soluta aut eius fugit quam in
+            suscipit?</p>
+          <img class="img-fluid  rounded" src="/Images/react-logo.png" alt="React logo icon"
+            style="width: 35%; height: auto;" />
+
+        </div>
+      </div><br>
+      <!-- hr lägger till en rad här. Använde en rad här för att sidan "bryts" från projekt till kontaktformuläret. -->
+      <hr>
+      <section>
+        <!--Kontaktformulär-->
+        <div class="random">
+
+          <div class="grid-container">
+            <div class="grid-item1">
+              <a id="kontakta_mig">
+                <h1>Kontakta mig</h1>
+              </a>
+            </div>
+
+            <div class="grid-item2">
               <p>Vill du komma i kontakt med mig om egenetligen vad som helst så får du gärna fylla i formuläret
-              till höger så återkommer jag så fort jag kan.</p></div>
-         <div class="grid-item3">
+                till höger så återkommer jag så fort jag kan.</p>
+            </div>
+            <div class="grid-item3">
               <!--Id elementet fungerar på liknande sätt som class, men man kan endast ha ett id namn i ett html document.
       Som en class är den kopplad till stylesheet. Den kan även användas av Javaascript. I denna id skapade
       jag ett formulär som jag döpte till Kontakta mig-->
               <div id="kontakt">
-                  <div>
-                      <!--form står för formulär och action är vad som händer när man trycker på submit. I detta fall
+                <div>
+                  <!--form står för formulär och action är vad som händer när man trycker på submit. I detta fall
                   skickas man till sidan som heter Kontaktat.mig.-->
-                      <form action="/Projekt/Kontaktat.mig.html" name="myForm">
-                          <!--label är texten som man ser i formuläret. for i label taggen ska alltid försökas kopplas till
+                  <form action="/Kontaktat.mig.html" name="myForm">
+                    <!--label är texten som man ser i formuläret. for i label taggen ska alltid försökas kopplas till
                       id i input. name används för att referera till den inskrivna datan i efter hand eller referera
                       element i Javascript. -->
 
-                          <label for="fname">First name</label><br>
-                          <!--input specificerar typen av indata, i detta fall text.-->
-                          <input type="text" id="fname" name="fname"><br>
-                          <label for="lname">Last name</label><br>
-                          <input type="text" id="lname" name="lname"><br>
-                          <label for="email">Email adress</label><br>
-                          <input type="text" id="email" name="email"><br><br>
-                          <!--Denna gången så är type submit. det betyder att jag får en submit knapp till mitt formulär.-->
-                          <input type="submit" value="Submit">
-                      </form>
-                  </div>
+                    <label for="fname">Förnamn:</label><br>
+                    <!--input specificerar typen av indata, i detta fall text.-->
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Efternamn:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email adress:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <label for="message">Meddelande:</label><br>
+                    <textarea name="message" rows="10" cols="22"></textarea><br><br>
+                    <!--Denna gången så är type submit. det betyder att jag får en submit knapp till mitt formulär.-->
+                    <input type="submit" value="Skicka">
+                  </form>
+                </div>
               </div>
+            </div>
+
           </div>
-           
-
-
-
-  </div>
-  </div>
-  </section>
+        </div>
+      </section>
     </div>
-    <!-- /.container -->
+    <!-- .container slutar här -->
   </sectiion>
   <div id="page-content">
     <div class="container text-center">
       <div class="row justify-content-center">
-        
+
       </div>
     </div>
   </div>
-  <!--Kontaktformulär-->
 
-  
+
   <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
     <div class="container text-center">
-      <small>Ernesto Neyra</small>
-      <!--<small>Copyright &copy; Your Website</small>-->
+      <small>Copyright &copy; 2020 Ernesto Neyra</small>
+
     </div>
   </footer>
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
+</body>
 
-    <!-- Option 2: jQuery, Popper.js, and Bootstrap JS
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-    -->
-  </body>
 </html>
