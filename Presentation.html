@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Ernesto Neyra</title>
+
+</head>
+
+
+<body>
+    <main>
+        <!--Måste lägga in kommentarer i koden och beskriva vad elementen betyder och vad de gör.-->
+        <!--Presentation-->
+        <!--Här är första delen av min sida. Det är den delen med den blåa bakgrunden.
+                Den innehåller navbar, rubrik, bild, formulär, vanlig text och en fet text-->
+        <header>
+            <!--en class är ett namn som är kopplad till en stylesheet (CSS) där man kan ändra alla element inom klassen tillsammans.
+            Denna klass innehåller de tre knapparna som länkar till startsidan (hem), portfoliosidan och kontaktsidan.
+            Bakgrunden lades till i klassen. -->
+            <div class="navbar">
+                <!--Denna tag skapar en unordered list, onumrerad. Den innehåller punkter istället för siffror.-->
+                <ul>
+                    <!--Detta är den förta punkten i listan.
+                        li står för list item, a står för attachment och används innan något som ska bifogas t.ex. bild eller länk.
+                        button elementet skapar en knapp. i det här fallet skapas en knapp som heter hem och som länkas till startsidan av hemsidan. -->
+                    <li><a href="/Presentation.html"><button>Hem</button></a></li>
+
+                    <li><a href="/Index.html"><button>Portfolio</button></a></li>
+                    <li><a href="/Kontaktat.mig.html"><button>Kontakta mig</button></a></li>
+                    <!--Nedanför är en länk som öppnas i en ny sida med titeln Chiitan: Last Week Tonight with John Oliver (HBO) och den heter Funny videos. -->
+                    <li><a href="https://www.youtube.com/watch?v=f4fVdf4pNEc&t=643s" target="_blank"
+                            title="Chiitan: Last Week Tonight with John Oliver (HBO)">Funny videos</a></li>
+
+                </ul>
+            </div>
+            <!--img elementet betyder att det är en bild som ska in, src står för source och här ska länken till själbva bilden in.
+                alt (alternativ) namnet kommer att visas om webbläsaren inte lyckas hitta bilden som länkas. med widht och height
+                lägger man till bredden och höjden på bilden.  -->
+            <img src="./Images/Migmedramen.jpg" alt="Mig med ramen" class="responsive" />
+
+
+
+
+            <!--Klassen intro bestämmer hur elemntet p ska se ut. p används när man skriver vanlig text. Genom att ha hela
+                    texten i klassen kan jag ändra den i CSS genom klassen istället för p.-->
+            <div class="intro">
+                <!--h1 står för Header och den är den största rubriken, den följs av h2, h3, h4 osv.-->
+                <h1>Ernesto Neyra</h1>
+                <!--b elementet betyder bold och gör texten till fet stil.-->
+                <b>Front-End Developer</b>
+                <p>
+                    Jag heter Ernesto och bor i Helsingborg. Jag har jobbat inom
+                    turismbranschen de senaste åren, men har stort intresse för IT och
+                    vill jobba med Front End uveckling i framtiden. Denna utbildnig är en
+                    utmärkt möjlighet för att uppnå mitt mål.
+                    Jag har tidigare studerat media och kommunikationsvetenskap, men hamnade i en annan bana i livet.
+                    Nu när jag blev arbetslös är det en bra tid att studera IT för framtiden.
+                </p>
+                <p>
+                    Mina andra intressen är spel, anime och filmer. Ni kan hitta mina top
+                    listor nedanför. Baserat på intressen så tror du kanske att jag är en
+                    inomhusperson, det är jag.  
+                </p><br><br>
+
+            </div>
+            
+        </header>
+        <!--Intressen-->
+        <section>
+            <!--h2 är likadan som h1, men mindre storlek-->
+            <div class="intressen">
+                <h2>Mina intressen. </h2>
+
+                
+                <!--Här skapade jag en class som innehåller hela flexboxen. Det finns 3st i den. De utmärks av li.
+                    Varje li element är en egen del, men dem kontrolleras av flex-item(x) klassen. -->
+                <ul class="flex-box">
+                    <li>
+                        <!--Jag skapade 3 st flex-items så att jag kan ändra dem individuellt.-->
+                        <div class="flex-item1">
+                            <h3>Favorit Filmer</h3>
+
+                            <ul>
+                                <li>Gladiator</li>
+                                <li>Back to the future trilogy</li>
+                                <li>Home Alone</li>
+                                <li>The invention of lying</li>
+                                <li>A thousand words</li>
+                            </ul>
+                    </li>
+
+                    <li>
+                        <div class="flex-item2">
+                            <h3>Favorit Anime</h3>
+                            <ul>
+                                <li>
+                                    <!--href attributet specifierar destinationen till en länk. target="_blank" gör så att
+                                        länken öppnas i ett nytt förnster i webbläsaren.-->
+                                        <a href="https://myanimelist.net/anime/20785/Mahouka_Koukou_no_Rettousei"
+                                            target="_blank">Mahouka koukou no rettousei</a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/39196/Mairimashita_Iruma-kun"
+                                        target="_blank">Mairimashita Iruma-kun</a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/20583/Haikyuu" target="_blank">Haikyuu!!</a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/30276/One_Punch_Man" target="_blank">One
+                                        Punch
+                                        Man</a>
+                                </li>
+                                <li>
+                                    <a href="https://myanimelist.net/anime/40496/Maou_Gakuin_no_Futekigousha__Shijou_Saikyou_no_Maou_no_Shiso_Tensei_shite_Shison-tachi_no_Gakkou_e_"
+                                        target="_blank">Maou Gakuin no Futekigousha</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flex-item3">
+                            <h3>Favorit Spel</h3>
+                            <ul>
+                                <li>Final Fantasy serien</li>
+                                <li>Persona 5</li>
+                                <li>Watch Dogs</li>
+                                <li>Assassin's Creed Odyssey</li>
+                                <li>Spider-man</li>
+                            </ul>
+                    </li>
+            </div>
+            </ul>
+            <!--<div class="grid-item1">
+                    <h3>Favorit Filmer</h3>
+
+                    <ul>
+                        <li>Gladiator</li>
+                        <li>Back to the future trilogy</li>
+                        <li>Home Alone</li>
+                        <li>The invention of lying</li>
+                        <li>A thousand words</li>
+                    </ul>
+                </div>
+                <div class="grid-item2">
+                    <h3>Favorit Anime</h3>
+                    <ul>
+                        <li>-->
+            <!--href attributet specifierar destinationen till en länk.
+                                target="_blank" gör så att länken öppnas i ett nytt förnster i webbläsaren.-->
+            <!-- <a href="https://myanimelist.net/anime/20785/Mahouka_Koukou_no_Rettousei"
+                                target="_blank">Mahouka koukou no rettousei</a>
+                        </li>
+                        <li>
+                            <a href="https://myanimelist.net/anime/39196/Mairimashita_Iruma-kun"
+                                target="_blank">Mairimashita Iruma-kun</a>
+                        </li>
+                        <li>
+                            <a href="https://myanimelist.net/anime/20583/Haikyuu" target="_blank">Haikyuu!!</a>
+                        </li>
+                        <li>
+                            <a href="https://myanimelist.net/anime/30276/One_Punch_Man" target="_blank">One Punch
+                                Man</a>
+                        </li>
+                        <li>
+                            <a href="https://myanimelist.net/anime/40496/Maou_Gakuin_no_Futekigousha__Shijou_Saikyou_no_Maou_no_Shiso_Tensei_shite_Shison-tachi_no_Gakkou_e_"
+                                target="_blank">Maou Gakuin no Futekigousha</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid-item3">
+                    <h3>Favorit Spel</h3>
+                    <ul>
+                        <li>Final Fantasy serien</li>
+                        <li>Persona 5</li>
+                        <li>Watch Dogs</li>
+                        <li>Assassin's Creed Odyssey</li>
+                        <li>Spider-man</li>
+                    </ul>
+                </div>
+            </div>
+            </div>-->
+        </section>
+
+        <!--Jag gjorde ett till section element för en ny sektion på sidan.-->
+        <!--footer delen är längst ner på sidan.-->
+        <footer>
+            <!--Huvudklassen som är föräldern i footer.-->
+            <div class="random">
+
+                <div class="grid-container">
+                    <div class="grid-item1">
+                        <h1>Kontakta mig.</h1>
+                    </div>
+                    
+                    <div class="grid-item2">
+                        <p>Vill du komma i kontakt med mig om egenetligen vad som helst så får du gärna fylla i formuläret
+                        till höger så återkommer jag så fort jag kan.</p></div>
+                   <div class="grid-item3">
+                        <!--Id elementet fungerar på liknande sätt som class, men man kan endast ha ett id namn i ett html document.
+                Som en class är den kopplad till stylesheet. Den kan även användas av Javaascript. I denna id skapade
+                jag ett formulär som jag döpte till Kontakta mig-->
+                        <div id="kontakt">
+                            <div>
+                                <!--form står för formulär och action är vad som händer när man trycker på submit. I detta fall
+                            skickas man till sidan som heter Kontaktat.mig.-->
+                                <form action="/Projekt/Kontaktat.mig.html" name="myForm">
+                                    <!--label är texten som man ser i formuläret. for i label taggen ska alltid försökas kopplas till
+                                id i input. name används för att referera till den inskrivna datan i efter hand eller referera
+                                element i Javascript. -->
+
+                                    <label for="fname">First name</label><br>
+                                    <!--input specificerar typen av indata, i detta fall text.-->
+                                    <input type="text" id="fname" name="fname"><br>
+                                    <label for="lname">Last name</label><br>
+                                    <input type="text" id="lname" name="lname"><br>
+                                    <label for="email">Email adress</label><br>
+                                    <input type="text" id="email" name="email"><br><br>
+                                    <!--Denna gången så är type submit. det betyder att jag får en submit knapp till mitt formulär.-->
+                                    <input type="submit" value="Submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                     
+
+
+
+            </div>
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+</html>
+
+
