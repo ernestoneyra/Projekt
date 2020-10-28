@@ -77,6 +77,5 @@ font-size: 1.5rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif; /* det här ändrar utseendet på
   texten, fonten som används.*/
   font-size: 12px; /* storleken på fonten/texten.*/
-  display: flex;
-  flex-direction: row;
+
 }
